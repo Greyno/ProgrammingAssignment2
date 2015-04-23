@@ -1,7 +1,7 @@
-## For a potentially time-consuming calculation, these functions will first find the inverse of a matrix and then cache the solution. If the inverse has already been calcuated, the cached solution will be returned. 
+## For a potentially time-consuming calculation, these functions will first find the inverse of a matrix and then 
+##cache the solution. If the inverse has already been calcuated, the cached solution will be returned. 
 
 #This program was forked from Github using Terminal via ->github clone https:<web location in my Github repo>
-
 
 
 
@@ -16,14 +16,12 @@
 # 4. get the value of the inverse of the matrix
 
 
-
-
 makeCacheMatrix <- function(x = matrix()) {
     
     inv <- NULL
     
     set <- function(y) {
-        
+    
         x <<- y
         
         inv <<- NULL
@@ -47,8 +45,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
-## The cacheSolve functions returns the inverse of the matrix. It first checks if the inverse has already been caluclated. If the inverse has already been calculated, it returns the cached solution and skips computation. Otherwise, the function calculates the inverse and sets the value of the inverse in the cache via the setinverse function. The assumption for the inverse calculation is that the matrix is always invertible.
-
+## The cacheSolve functions returns the inverse of the matrix. It first checks if the inverse has already been 
+##caluclated. If the inverse has already been calculated, it returns the cached solution and skips computation. 
+##Otherwise, the function calculates the inverse and sets the value of the inverse in the cache via the 
+##setinverse function. The assumption for the inverse calculation is that the matrix is always invertible.
 
 
 
